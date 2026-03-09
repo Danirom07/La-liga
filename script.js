@@ -395,6 +395,9 @@ async function cargarClasificacion() {
             }
         });
 
+app.use(cors());
+
+      
         const data = await response.json();
 
         const standings = data.standings[0].table;
@@ -441,3 +444,4 @@ document.getElementById("buscarEquipo").addEventListener("input", function () {
         fila.style.display = nombre.includes(filtro) ? "" : "none";
     });
 });
+
