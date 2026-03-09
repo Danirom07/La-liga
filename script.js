@@ -200,8 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // API CLASIFICACIÓN 
     const API_KEY = '2dd07104cbe042b59b7defdab7067576';
-    const URL_CLASIFICACION = 'https://api.football-data.org/v4/competitions/PD/standings';
-
+    const url = "/api/clasificacion";
     async function cargarLaLiga() {
         const cuerpoTabla = document.querySelector('.tabla-clasificacion tbody');
         if (!cuerpoTabla) return;
@@ -444,4 +443,5 @@ document.getElementById("buscarEquipo").addEventListener("input", function () {
         fila.style.display = nombre.includes(filtro) ? "" : "none";
     });
 });
+
 
