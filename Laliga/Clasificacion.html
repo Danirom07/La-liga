@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clasificación - LaLiga EA SPORTS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header-clasificacion">
+    <img src="imagenes/Titulo.png" class="header-logo" alt="LaLiga EA SPORTS">
+
+    <nav class="hero-menu">
+
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="menu-links" id="menuLinks">
+            <a href="index.html">Inicio</a>
+            <a href="Clasificacion.html">Clasificación</a>
+            <a href="Clubes.html">Clubes</a>
+            <a href="Fichajes.html">Fichajes</a>
+            <a href="Galería.html">Galería</a>
+            <button id="themeToggle" class="theme-btn">🌙</button>
+        </div>
+
+    </nav>
+</header>
+
+<br>
+<br>
+<section class="contenedor-clasificacion-pro">
+    <div class="glass-header">
+        <div class="titulo-grupo">
+            <div class="badge-live">
+                <span class="dot-live"></span> LIVE
+            </div>
+            <h2>Clasificación <span class="anho">2025/26</span></h2>
+        </div>
+        <div class="search-wrapper">
+            <span class="icon-lupa">🔍</span>
+            <input type="text" id="buscarEquipo" placeholder="Buscar equipo...">
+        </div>
+    </div>
+
+    <div class="tabla-container-pro">
+        <table class="tabla-clasificacion">
+            <thead>
+            <tr>
+                <th>Pos</th>
+                <th style="text-align: left;">Equipo</th>
+                <th>PJ</th>
+                <th>PTS</th>
+                <th>PG</th>
+                <th>PE</th>
+                <th>PP</th>
+                <th>GF</th>
+                <th>GC</th>
+                <th>DG</th>
+            </tr>
+            </thead>
+
+            <tbody id="tablaCuerpo"></tbody>
+
+        </table>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
